@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahjong Solitaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Status Bar -->
+    <div id="statusbar" class="statusbar">
+        <div class="statusbar-left">
+            <h1>Mahjong Solitaire</h1>
+        </div>
+        <div class="statusbar-center">
+            <span id="round-info">Round 1</span>
+            <span id="tiles-remaining">Tiles: 0</span>
+        </div>
+        <div class="statusbar-right">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <button id="new-game" class="btn">New Game</button>
+        </div>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container">
+        <div id="game-board" class="game-board"></div>
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
